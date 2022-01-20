@@ -1,0 +1,46 @@
+@import "./header.css";
+/*showcase*/
+.showcase {
+  padding: 2rem;
+  position: absolute;
+  top: 150px;
+  left: 60px;
+}
+
+.showcase .content-container {
+  max-width: 550px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.letter {
+  color: #2dc2ae;
+}
+
+.showcase .content-container h1 {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase .content-container p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.showcase-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .showcase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .showcase .content-container h1 {
+    font-size: 3.5rem;
+  }
+}
