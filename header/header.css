@@ -8,3 +8,10 @@
   position: relative;
   width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  #header {
+    position: relative;
+    height: 100vh;
+  }
+}

@@ -21,3 +21,7 @@ a {
 li {
   list-style: none;
 }
+
+.content {
+  min-height: 100vh;
+}

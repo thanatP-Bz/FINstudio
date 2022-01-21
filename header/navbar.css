@@ -17,18 +17,34 @@
   white-space: nowrap;
   color: #fff;
   flex-wrap: wrap;
+  transform: translateX(-120%);
+  transition: 1.2s;
 }
 
-.nav-link ul {
+.reveal-logo {
+  transform: translateX(0);
+}
+
+.nav-links {
+  transform: translateX(120%);
+  transition: 1.2s;
+  overflow: hidden;
+}
+
+.reveal-nav {
+  transform: translateX(0%);
+}
+
+.nav-links ul {
   display: flex;
   margin: 0rem 1rem;
 }
 
-.nav-link ul li {
+.nav-links ul li {
   margin: 0 0.7rem;
 }
 
-.nav-link ul li a {
+.nav-links ul li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -51,6 +67,10 @@
 
   .logo {
     font-size: 2.5rem;
+  }
+
+  .nav-links {
+    display: none;
   }
 
   .nav-link ul li a {
