@@ -1,9 +1,25 @@
+/* header */
 @import "./header/navbar.css";
 @import "./header/showcase.css";
 @import "./header/header.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+/* content */
+@import "./content/content.css";
 
+/* idea */
+@import "./idea/idea.css";
+
+/* concept */
+@import "./concept/concept.css";
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+:root {
+  --color-first: #8ad4ce;
+  --color-btn: #82c2b4;
+  --color-white: #fff;
+  --color-black: #333;
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +36,4 @@ a {
 
 li {
   list-style: none;
-}
-
-.content {
-  min-height: 100vh;
 }
