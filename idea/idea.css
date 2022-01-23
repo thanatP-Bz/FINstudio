@@ -37,30 +37,32 @@
 }
 
 .reveal-hidden {
-  display: none;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .reveal-content_idea {
   transform: translateY(100%);
-  animation: reveal-idea 1.2s cubic-bezier(0.34, 0.34, 0.6, 1) forwards;
+  transition: 1.5s;
+  animation: reveal-idea 1.3s cubic-bezier(0.34, 0.34, 0.6, 1) forwards;
 }
 
 .reveal-idea:nth-child(2) .reveal-content_idea {
-  animation-delay: 0.5s;
+  animation-delay: 1.6s;
 }
 .reveal-idea:nth-child(3) .reveal-content_idea {
-  animation-delay: 1.2s;
+  animation-delay: 1.8s;
 }
 
 .reveal-idea:nth-child(4) .reveal-content_idea {
-  animation-delay: 1.7s;
+  animation-delay: 2s;
 }
 
 @keyframes reveal-idea {
-  0% {
+  from {
     transform: translateY(100%);
   }
-  100% {
+  to {
     transform: translateY(0);
   }
 }
