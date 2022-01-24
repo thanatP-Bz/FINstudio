@@ -28,9 +28,9 @@ toggleButton.addEventListener("click", () => {
 });
 
 const reset = () => {
-  const viewUpdate = window.innerWidth;
+  const viewWidthUpdate = window.innerWidth;
 
-  if (viewUpdate > 800) {
+  if (viewWidthUpdate > 800) {
     showcase.classList.remove("showcase-hidden");
     sidebar.classList.remove("show-side_bar");
     icon1.classList.remove("hidden");

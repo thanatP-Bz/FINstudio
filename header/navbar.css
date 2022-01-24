@@ -1,5 +1,9 @@
 @import "./header.css";
 
+.test {
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -48,7 +52,6 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 1.2rem;
-  display: block;
 }
 
 .nav-links ul li a:hover {

@@ -28,7 +28,8 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(228, 248, 248);
+  overflow-x: hidden;
 }
 
 a {
