@@ -1,8 +1,5 @@
 @import "./header.css";
-
-.test {
-  cursor: pointer;
-}
+@import "../main.css";
 
 .navbar {
   display: flex;
@@ -151,4 +148,27 @@
   .hidden {
     display: none;
   }
+}
+
+/* scroll link */
+.top-link,
+.bottom-link {
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  background-color: var(--box-second);
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.top-link_active,
+.bottom-link_active {
+  opacity: 0;
 }

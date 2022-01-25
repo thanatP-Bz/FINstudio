@@ -1,3 +1,5 @@
+@import "../main.css";
+
 .idea {
   padding: 3rem 3rem;
   z-index: 0;
@@ -11,11 +13,20 @@
 }
 
 .grid-box {
-  padding: 2.5rem;
+  padding: 2.3rem;
   margin: 1rem;
   color: var(--color-white);
   background-color: #a6d1b3;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
+}
+
+.grid-box i {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.grid-box h2 {
+  margin: 0.5rem 0;
 }
 
 .box-2 {

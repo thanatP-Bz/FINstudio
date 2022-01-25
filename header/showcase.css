@@ -22,7 +22,7 @@
 }
 
 .letter {
-  color: var(--color-first);
+  color: var(--box-second);
 }
 
 .showcase .content-container h1 {
@@ -55,7 +55,7 @@
 }
 
 .reveal:nth-child(4) .reveal-content {
-  animation-delay: 1.7s;
+  animation-delay: 1.6s;
 }
 
 @keyframes reveal {

@@ -1,7 +1,37 @@
+@import "../main.css";
+
 .content {
-  padding: 8rem 7%;
+  padding: 7rem 4rem;
 }
 
 .about-us_container {
-  padding: 5rem 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 500px;
+  background-color: var(--color-white);
+}
+
+.text-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 3rem;
+  margin-left: 100px;
+}
+
+.content-image {
+  max-width: 650px;
+  height: 500px;
+  border: 10px #fff solid;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  margin-right: 100px;
+  margin-top: -50px;
+  /*  transform: translateX(130%); */
+  transition: 1s;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

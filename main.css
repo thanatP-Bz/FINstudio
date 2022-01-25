@@ -19,6 +19,14 @@
   --color-btn: #82c2b4;
   --color-white: #fff;
   --color-black: #333;
+  --color-gray: #
+
+  --box-first: #a6d1b3;
+  --box-second: #98d7c2;
+  --box-third: #54aeaf;
+  --box-forth: #6ad2e2;
+
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 * {
   margin: 0;
