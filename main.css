@@ -56,3 +56,12 @@ li {
   border-radius: 100px;
   font-size: 1.2rem;
 }
+
+/* resposive */
+@media (max-width: 800px) {
+  .btn {
+    padding: 0.7rem 3rem;
+    border-radius: 100px;
+    font-size: 1rem;
+  }
+}

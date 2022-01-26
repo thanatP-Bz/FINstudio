@@ -56,3 +56,25 @@ const textObserve = new IntersectionObserver(revealContent, {
 });
 
 textObserve.observe(about);
+
+//obsever Concept
+const concept = document.querySelector(".concept");
+const conceptContainer = document.querySelector(".text-concept_container");
+const conceptImg1 = document.querySelector(".concept-image_image-1");
+const conceptImg2 = document.querySelector(".concept-image_image-2");
+
+const revealConcept = (entries) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  else {
+    conceptContainer.classList.add("text-concept_container-active");
+    conceptImg1.classList.add("concept-image_1-active");
+    conceptImg2.classList.add("concept-image-2-active");
+  }
+};
+
+const observerConcept = new IntersectionObserver(revealConcept, {
+  threshold: 0.3,
+});
+
+observerConcept.observe(concept);
