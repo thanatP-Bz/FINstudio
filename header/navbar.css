@@ -170,5 +170,5 @@
 
 .top-link_active,
 .bottom-link_active {
-  opacity: 0;
+  opacity: 1;
 }

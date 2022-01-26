@@ -1,2 +1,160 @@
+@import "../main.css";
+
 .concept {
+  padding: 7rem 4rem;
+}
+
+.concept-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  height: 500px;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.text-concept_container {
+  max-width: 550px;
+  height: 500px;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  margin-left: 4.5rem;
+  transition: 1.7s ease;
+  /*  transform: translateY(50%);
+  opacity: 0; */
+}
+
+.text-concept_container h1 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.text-concept_container p {
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.concept-image {
+  max-width: 650px;
+  width: 100%;
+  height: 500px;
+  margin-left: 2rem;
+  transition: 2.4s ease;
+  margin-top: -2.5rem;
+  /* transform: translateX(130%);
+  opacity: 0; */
+}
+
+.concept-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+.concept-image .image-1 {
+  max-width: 650px;
+  width: 100%;
+  height: 500px;
+  background-color: thistle;
+  box-shadow: var(--box-shadow);
+  transition: 1.3s;
+}
+
+.concept-image .image-2 {
+  max-width: 325px;
+  width: 100%;
+  height: 350px;
+  box-shadow: var(--box-shadow);
+  background-color: turquoise;
+  margin-left: 370px;
+  margin-top: -220px;
+  transition: 1.3s;
+}
+
+.concept-image .image-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.concept-image .image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-concept_container .btn-container a {
+  background-color: var(--box-third);
+}
+
+@media (max-width: 1340px) {
+  .concept-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-concept_container {
+    margin: 0 auto;
+  }
+
+  .concept-image {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  .concept-image .image-2 {
+    margin-left: 150px;
+    margin-top: -220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .concept-container {
+    display: flex;
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-concept_container {
+    max-width: 700px;
+    height: 400px;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+  .text-concept_container .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .concept-image {
+    max-width: 700px;
+    height: 400px;
+    margin-top: -35px;
+  }
+
+  .concept-image .image-2 {
+    max-width: 430px;
+    width: 100%;
+    height: 320px;
+    margin-left: 350px;
+    margin-top: -250px;
+  }
+
+  .text-concept_container h1 {
+    margin-top: 1.2rem;
+    padding: 0.7rem 0;
+    font-size: 2.5rem;
+  }
+
+  .text-concept_container p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
 }

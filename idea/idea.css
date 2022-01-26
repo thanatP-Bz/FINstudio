@@ -10,7 +10,7 @@
   grid-gap: 0.5rem;
   color: #333;
   font-size: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-box {
@@ -69,6 +69,7 @@
 
 @media (max-width: 1080px) {
   .grid-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(500px, 2fr);
   }
 }

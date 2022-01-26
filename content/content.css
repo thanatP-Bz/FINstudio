@@ -1,12 +1,12 @@
 @import "../main.css";
 
 .content {
-  padding: 7rem 4rem;
+  padding: 5rem 4rem;
 }
 
 .about-us_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   background-color: var(--color-white);
   height: 500px;
   margin-top: 3rem;
@@ -99,6 +99,23 @@ span {
     padding: 2rem;
     margin: 0 auto;
   }
+
+  .text-container h1 {
+    padding: 0.7rem 0;
+    font-size: 2.5rem;
+  }
+
+  .text-container p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .text-container .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .content-image {
     max-width: 700px;
     height: 400px;
