@@ -14,12 +14,13 @@
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Red+Hat+Display:wght@300&display=swap");
+
 :root {
   --color-first: #54aeaf;
   --color-btn: #82c2b4;
   --color-white: #fff;
   --color-black: #333;
-  --color-gray: #
 
   --box-first: #a6d1b3;
   --box-second: #98d7c2;
@@ -46,4 +47,12 @@ a {
 
 li {
   list-style: none;
+}
+
+.btn-1 {
+  color: var(--color-white);
+  background-color: var(--box-second);
+  padding: 1rem 3.5rem;
+  border-radius: 100px;
+  font-size: 1.2rem;
 }

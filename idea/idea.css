@@ -7,6 +7,7 @@
 
 .grid-container {
   display: grid;
+  grid-gap: 0.5rem;
   color: #333;
   font-size: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -64,4 +65,10 @@
 .reveal-active {
   transform: translateY(0);
   opacity: 1;
+}
+
+@media (max-width: 1080px) {
+  .grid-container {
+    display: flex;
+  }
 }

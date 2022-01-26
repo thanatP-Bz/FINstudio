@@ -29,9 +29,6 @@ const revealTopLInk = (entries) => {
   else topLink.classList.remove("top-link_active");
 };
 
-const rect = header.getBoundingClientRect();
-console.log(rect);
-
 const topLInkObserve = new IntersectionObserver(revealTopLInk, {
   threshold: 0,
   root: null,
@@ -39,3 +36,23 @@ const topLInkObserve = new IntersectionObserver(revealTopLInk, {
 });
 
 topLInkObserve.observe(header);
+
+// observe content
+const about = document.querySelector(".about-us_container");
+const textContainer = document.querySelector(".text-container");
+const imageContainer = document.querySelector(".content-image");
+
+const revealContent = (entries) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  else {
+    textContainer.classList.add("text-container_active");
+    imageContainer.classList.add("content-image_active");
+  }
+};
+
+const textObserve = new IntersectionObserver(revealContent, {
+  threshold: 0.15,
+});
+
+textObserve.observe(about);
