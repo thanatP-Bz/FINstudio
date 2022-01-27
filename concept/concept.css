@@ -13,15 +13,18 @@
 }
 
 .text-concept_container {
-  max-width: 550px;
-  height: 90%;
-  width: 100%;
-  padding: 2rem;
-  margin-left: 5rem;
+  max-height: 80%;
+  width: 80%;
+  padding: 2.5rem;
+  margin-left: 4rem;
   transition: 2s ease;
   transform: translateY(50%);
   opacity: 0;
   background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text-concept_container-active {
@@ -73,7 +76,7 @@
   background-color: turquoise;
   margin-left: 370px;
   margin-top: -220px;
-  transition: 3s ease;
+  transition: 2s ease-out;
   transform: translateY(50%);
   opacity: 0;
 }
@@ -181,8 +184,7 @@
   }
 
   .concept-image_image-1 {
-    max-width: 500px;
-    width: 100%;
+    max-width: 90%;
     height: 500px;
     background-color: thistle;
     box-shadow: var(--box-shadow);

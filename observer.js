@@ -8,6 +8,7 @@ const revealBox = (entries, observer) => {
     } else {
       entry.target.classList.add("reveal-active");
     }
+    observer.unobserve(entry.target);
   });
 };
 
@@ -23,10 +24,11 @@ revealIdea.forEach((item) => {
 const header = document.getElementById("header");
 const topLink = document.querySelector(".top-link");
 
-const revealTopLInk = (entries) => {
+const revealTopLInk = (entries, observer) => {
   const [entry] = entries;
   if (!entry.isIntersecting) topLink.classList.add("top-link_active");
   else topLink.classList.remove("top-link_active");
+  observer.unobserve(entry.target);
 };
 
 const topLInkObserve = new IntersectionObserver(revealTopLInk, {
@@ -42,13 +44,14 @@ const about = document.querySelector(".about-us_container");
 const textContainer = document.querySelector(".text-container");
 const imageContainer = document.querySelector(".content-image");
 
-const revealContent = (entries) => {
+const revealContent = (entries, observer) => {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   else {
     textContainer.classList.add("text-container_active");
     imageContainer.classList.add("content-image_active");
   }
+  observer.unobserve(entry.target);
 };
 
 const textObserve = new IntersectionObserver(revealContent, {
@@ -63,7 +66,7 @@ const conceptContainer = document.querySelector(".text-concept_container");
 const conceptImg1 = document.querySelector(".concept-image_image-1");
 const conceptImg2 = document.querySelector(".concept-image_image-2");
 
-const revealConcept = (entries) => {
+const revealConcept = (entries, observer) => {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   else {
@@ -71,10 +74,11 @@ const revealConcept = (entries) => {
     conceptImg1.classList.add("concept-image_1-active");
     conceptImg2.classList.add("concept-image-2-active");
   }
+  observer.unobserve(entry.target);
 };
 
 const observerConcept = new IntersectionObserver(revealConcept, {
-  threshold: 0.3,
+  threshold: 0.4,
 });
 
 observerConcept.observe(concept);
