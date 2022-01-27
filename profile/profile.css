@@ -1,0 +1,11 @@
+@import "../main/main.css";
+
+.profile {
+  padding: 4rem 4rem;
+  background-color: rgb(241, 222, 198);
+}
+
+.profile-container {
+  background-color: var(--color-white);
+  height: 500px;
+}

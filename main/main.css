@@ -1,16 +1,19 @@
 /* header */
-@import "./header/navbar.css";
-@import "./header/showcase.css";
-@import "./header/header.css";
+@import "../header/navbar.css";
+@import "../header/showcase.css";
+@import "../header/header.css";
 
 /* content */
-@import "./content/content.css";
+@import "../content/content.css";
 
 /* idea */
-@import "./idea/idea.css";
+@import "../idea/idea.css";
 
 /* concept */
-@import "./concept/concept.css";
+@import "../concept/concept.css";
+
+/* profile */
+@import "../profile/profile.css";
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
@@ -39,6 +42,8 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: rgb(228, 248, 248);
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 a {
