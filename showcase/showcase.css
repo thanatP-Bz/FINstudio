@@ -1,4 +1,4 @@
-@import "./header.css";
+@import "/header/mainHeader.css";
 @import "../main.css";
 /*showcase*/
 .showcase {

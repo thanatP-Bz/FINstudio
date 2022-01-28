@@ -1,7 +1,6 @@
-/* header */
-@import "../header/navbar.css";
-@import "../header/showcase.css";
-@import "../header/header.css";
+@import "/header/mainHeader.css";
+@import "/showcase/showcase.css";
+@import "/navbar/navbar.css";
 
 /* content */
 @import "../content/content.css";
