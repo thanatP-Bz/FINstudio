@@ -7,7 +7,7 @@
 .about-us_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  background-color: var(--color-white);
+  background-color: azure;
   height: 500px;
   max-width: 100%;
 }
@@ -104,7 +104,7 @@ span {
 }
 
 /*resposive */
-@media (max-width: 610px) {
+@media (max-width: 800px) {
   .about-us_container {
     display: flex;
     min-height: 800px;
@@ -137,9 +137,10 @@ span {
   }
 
   .content-image {
-    min-width: 400px;
+    min-width: 350px;
     min-height: 400px;
-    margin: -700px;
-    margin-left: 0;
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 }

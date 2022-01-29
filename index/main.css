@@ -12,7 +12,7 @@
 @import "../concept/concept.css";
 
 /* profile */
-@import "../profile/profile.css";
+@import "/profile/profile.css";
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
