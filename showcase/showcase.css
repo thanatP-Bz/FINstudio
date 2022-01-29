@@ -1,5 +1,5 @@
 @import "/header/mainHeader.css";
-@import "../main.css";
+@import "/index/main.css";
 /*showcase*/
 .showcase {
   padding: 2rem;

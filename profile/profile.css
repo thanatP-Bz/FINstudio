@@ -1,0 +1,47 @@
+@import "/index/main.css";
+
+.profile {
+  padding: 5rem 4rem;
+}
+
+.profile-container {
+  min-height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid: 2rem;
+}
+
+.proflie-image_container {
+  max-height: 500px;
+  max-width: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+.proflie-image_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profile-text_container {
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  max-width: 100%;
+  max-height: 450px;
+  padding: 3rem;
+  margin-right: 30px;
+}
+
+.profile-text_container h1 {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+.profile-text_container p {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
