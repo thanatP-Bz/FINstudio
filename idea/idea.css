@@ -17,7 +17,7 @@
   padding: 2.3rem;
   margin: 1rem;
   color: var(--color-white);
-  background-color: #a6d1b3;
+  background-color: var(--box-first);
   box-shadow: var(--box-shadow);
 }
 
@@ -31,22 +31,22 @@
 }
 
 .box-2 {
-  background-color: #98d7c2;
+  background-color: var(--box-second);
 }
 
 .box-3 {
-  background-color: #54aeaf;
+  background-color: var(--box-third);
 }
 
 .box-4 {
-  background-color: #6ad2e2;
+  background-color: var(--box-forth);
 }
 
 /* animation */
 .reveal-idea {
-  transform: translateY(100%);
   position: relative;
-  opacity: 0;
+  /*  opacity: 0;
+  transform: translateY(100%); */
   transition: 0.7s;
 }
 
