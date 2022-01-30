@@ -15,6 +15,7 @@
 @import "/profile/profile.css";
 
 @import "/projects/projects.css";
+@import "/projects/lightbox.css";
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
@@ -30,6 +31,8 @@
   --box-second: #98d7c2;
   --box-third: #54aeaf;
   --box-forth: #6ad2e2;
+
+  --main-color: #e1ad01;
 
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

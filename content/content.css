@@ -16,9 +16,9 @@
   padding: 1rem;
   margin-left: 4.5rem;
   margin-top: 2.5rem;
-  transition: 1.7s ease;
+  /*   transition: 1.7s ease;
   transform: translateY(50%);
-  opacity: 0;
+  opacity: 0; */
 }
 
 .text-container_active {
@@ -45,8 +45,8 @@ span {
   margin-top: -2.5rem;
   margin-right: 2rem;
   transform: translateX(130%);
-  opacity: 0;
-  transition: 2.4s ease;
+  /*  opacity: 0;
+  transition: 2.4s ease; */
 }
 
 .content-image_active {
@@ -67,7 +67,7 @@ span {
     min-height: 800px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .text-container {
@@ -97,7 +97,6 @@ span {
   .content-image {
     max-width: 700px;
     min-height: 400px;
-    margin-top: -800px;
   }
 }
 
