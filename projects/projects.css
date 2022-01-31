@@ -37,6 +37,7 @@
   object-fit: cover;
   display: block;
   cursor: pointer;
+  border-radius: var(--border-radius);
 }
 
 .project-grid__container img:hover {

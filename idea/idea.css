@@ -19,6 +19,7 @@
   color: var(--color-white);
   background-color: var(--main-color);
   box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 
 .grid-box i {

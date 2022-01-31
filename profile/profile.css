@@ -25,7 +25,9 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: var(--border-radius);
 }
+
 .profile-text_container {
   margin-top: 2rem;
   align-items: center;
@@ -38,10 +40,10 @@
   max-height: 500px;
   height: 100%;
   padding: 3rem;
-  margin-right: 30px;
   transition: 1.7s ease;
   transform: translateY(100%);
   opacity: 0;
+  border-radius: var(--border-radius);
 }
 
 .profile-active {

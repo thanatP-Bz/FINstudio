@@ -19,6 +19,7 @@
   max-width: 550px;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: var(--border-radius);
 }
 
 .letter {
