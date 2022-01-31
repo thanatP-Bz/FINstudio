@@ -5,9 +5,17 @@
 .about-us_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  background-color: azure;
+  background-color: var(--main-color);
   height: 500px;
   max-width: 100%;
+  transition: 1.7s ease;
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.about-us_active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .text-container {
@@ -16,14 +24,7 @@
   padding: 1rem;
   margin-left: 4.5rem;
   margin-top: 2.5rem;
-  /*   transition: 1.7s ease;
-  transform: translateY(50%);
-  opacity: 0; */
-}
-
-.text-container_active {
-  transform: translateY(0);
-  opacity: 1;
+  color: var(--color-white);
 }
 
 .text-container h1 {
@@ -45,8 +46,8 @@ span {
   margin-top: -2.5rem;
   margin-right: 2rem;
   transform: translateX(130%);
-  /*  opacity: 0;
-  transition: 2.4s ease; */
+  opacity: 0;
+  transition: 2.4s ease;
 }
 
 .content-image_active {

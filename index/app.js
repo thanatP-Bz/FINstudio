@@ -1,13 +1,10 @@
 const toggleButton = document.querySelector(".nav-toggle");
 const sidebar = document.querySelector(".side-bar");
 const showcase = document.querySelector(".showcase");
-
 const logo = document.querySelector(".logo");
 const navlinks = document.querySelector(".nav-links");
-
 const icon1 = document.querySelector(".icon-1");
 const icon2 = document.querySelector(".icon-2");
-
 const bottomLink = document.querySelector(".bottom-link");
 
 //header effect
@@ -55,3 +52,23 @@ const reset = () => {
   }
 };
 window.onresize = reset;
+
+// light box
+const body = document.querySelector("body");
+const lightbox = document.querySelector(".light-box__container");
+const closeBtn = document.querySelector(".close");
+const showImg = lightbox.querySelector(".show-image img");
+const modalImg = document.querySelectorAll(".modal-img");
+
+//add lightbox
+modalImg.forEach((img) => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "block";
+    showImg.src = img.src;
+  });
+});
+
+//close light box
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});

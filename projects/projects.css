@@ -2,13 +2,16 @@
 
 .projects {
   padding: 5rem 4rem;
-  background-color: azure;
 }
 
-.project-header h1 {
+.project-header {
   font-size: 2rem;
   margin-bottom: 3rem;
   text-align: center;
+  color: var(--color-white);
+  transition: ease 1.7s;
+  transform: translateY(50%);
+  opacity: 0;
 }
 
 .project-grid__container {
@@ -16,29 +19,38 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 12px;
   grid-auto-flow: dense;
+  transition: ease 1.7s;
+  transform: translateY(100%);
+  opacity: 0;
 }
 
-.project-grid__container a img {
+.project-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-grid__container .light-box__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
-.project-grid__container a img:hover {
+.project-grid__container img:hover {
   transition: 0.5s;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
-.project-grid__container a:nth-child(1) {
+.project-grid__container .light-box__img:nth-child(1) {
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
 }
 
 @media (max-width: 800px) {
-  .project-grid__container a:nth-child(1) {
+  .project-grid__container .light-box__img:nth-child(1) {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
   }

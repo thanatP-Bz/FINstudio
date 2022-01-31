@@ -24,31 +24,29 @@ revealIdea.forEach((item) => {
 const header = document.getElementById("header");
 const topLink = document.querySelector(".top-link");
 
-const revealTopLInk = (entries, observer) => {
+const revealTopLInk = (entries) => {
   const [entry] = entries;
   if (!entry.isIntersecting) topLink.classList.add("top-link_active");
   else topLink.classList.remove("top-link_active");
-  observer.unobserve(entry.target);
 };
 
 const topLInkObserve = new IntersectionObserver(revealTopLInk, {
   threshold: 0,
-  root: null,
-  rootMargin: `-600px 0px 0px 0px`,
+  rootMargin: `-300px 0px 0px 0px`,
 });
 
 topLInkObserve.observe(header);
 
 // observe content
 const about = document.querySelector(".about-us_container");
-const textContainer = document.querySelector(".text-container");
+const textContainer = document.querySelector(".about-us_container");
 const imageContainer = document.querySelector(".content-image");
 
 const revealContent = (entries, observer) => {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   else {
-    textContainer.classList.add("text-container_active");
+    textContainer.classList.add("about-us_active");
     imageContainer.classList.add("content-image_active");
   }
   observer.unobserve(entry.target);
@@ -82,3 +80,45 @@ const observerConcept = new IntersectionObserver(revealConcept, {
 });
 
 observerConcept.observe(concept);
+
+//observe projects
+const projects = document.querySelector(".projects");
+const projectContainer = document.querySelector(".project-grid__container");
+const projectHeader = document.querySelector(".project-header");
+
+const revealProjects = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  else {
+    projectContainer.classList.add("project-active");
+    projectHeader.classList.add("project-active");
+  }
+  observer.unobserve(entry.target);
+};
+
+const observeProjects = new IntersectionObserver(revealProjects, {
+  threshold: 0.2,
+});
+
+observeProjects.observe(projects);
+
+//observe profile
+const profile = document.querySelector(".profile");
+const profileImg = document.querySelector(".proflie-image_container");
+const profileContent = document.querySelector(".profile-text_container");
+
+const revealProfile = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  else {
+    profileImg.classList.add("profile-active");
+    profileContent.classList.add("profile-active");
+  }
+  observer.unobserve(entry.target);
+};
+
+const observeProfile = new IntersectionObserver(revealProfile, {
+  threshold: 0.4,
+});
+
+observeProfile.observe(profile);

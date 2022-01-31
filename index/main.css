@@ -17,6 +17,8 @@
 @import "/projects/projects.css";
 @import "/projects/lightbox.css";
 
+@import "/news/news.css";
+
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Red+Hat+Display:wght@300&display=swap");
@@ -25,7 +27,7 @@
   --color-first: #54aeaf;
   --color-btn: #82c2b4;
   --color-white: #fff;
-  --color-black: #333;
+  --color-black: rgb(32, 32, 32);
 
   --box-first: #a6d1b3;
   --box-second: #98d7c2;
@@ -33,6 +35,7 @@
   --box-forth: #6ad2e2;
 
   --main-color: #e1ad01;
+  --second-color: #333652;
 
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -44,7 +47,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: rgb(228, 248, 248);
+  background-color: var(--color-black);
   overflow-x: hidden;
   width: 100%;
   height: 100%;
@@ -59,11 +62,17 @@ li {
 }
 
 .btn {
-  color: var(--color-white);
-  background-color: var(--box-second);
+  color: var(--main-color);
+  background-color: var(--color-white);
   padding: 1rem 3rem;
   border-radius: 100px;
   font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--second-color);
+  color: var(--color-white);
 }
 
 /* resposive */

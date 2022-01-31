@@ -20,7 +20,8 @@
   transition: 2s ease;
   transform: translateY(50%);
   opacity: 0;
-  background-color: azure;
+  background-color: var(--main-color);
+  color: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;
