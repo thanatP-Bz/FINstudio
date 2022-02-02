@@ -19,26 +19,30 @@
 
 @import "/news/news.css";
 
+@import "/footer/footer.css";
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Red+Hat+Display:wght@300&display=swap");
 
 :root {
-  --color-first: #54aeaf;
-  --color-btn: #82c2b4;
   --color-white: #fff;
-  --color-black: rgb(32, 32, 32);
+  --color-black: #202020;
 
   --box-first: #a6d1b3;
   --box-second: #98d7c2;
   --box-third: #54aeaf;
   --box-forth: #6ad2e2;
 
-  --main-color: #e1ad01;
+  --main-color: #11b9d3;
   --second-color: #333652;
+
+  --dark-theme: #e1ad01;
+  --body-theme: #f0ffff;
 
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   --border-radius: 3px;
+
+  --font-color: #202020;
 }
 * {
   margin: 0;
@@ -48,10 +52,18 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: rgb(218, 213, 213);
+  background-color: var(--body-theme);
+  position: relative;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+}
+
+body.active {
+  background-color: rgb(17, 14, 14);
+  --font-color: #fff;
+  --main-color: #e1ad01;
+  --box-second: #2d92cc;
 }
 
 a {
@@ -69,11 +81,23 @@ li {
   border-radius: 100px;
   font-size: 1rem;
   font-weight: bold;
+  box-shadow: var(--box-shadow);
 }
 
 .btn:hover {
   background-color: var(--second-color);
   color: var(--color-white);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--box-second);
+  color: #fff;
 }
 
 /* resposive */

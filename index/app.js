@@ -5,7 +5,7 @@ const logo = document.querySelector(".logo");
 const navlinks = document.querySelector(".nav-links");
 const icon1 = document.querySelector(".icon-1");
 const icon2 = document.querySelector(".icon-2");
-const bottomLink = document.querySelector(".bottom-link");
+const themeBtn = document.querySelector(".theme-btn");
 
 //header effect
 window.addEventListener("DOMContentLoaded", () => {
@@ -18,14 +18,14 @@ toggleButton.addEventListener("click", () => {
   //toggle sidebar
   sidebar.classList.toggle("show-side_bar");
   showcase.classList.toggle("showcase-hidden");
-  bottomLink.classList.add("bottom-link_active");
+  themeBtn.classList.add("theme-btn__hidden");
 
   //hidden scroll bar and show bottom link
   if (sidebar.classList.contains("show-side_bar")) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "visible";
-    bottomLink.classList.remove("bottom-link_active");
+    themeBtn.classList.remove("theme-btn__hidden");
   }
 
   //add and remove icons
@@ -48,7 +48,6 @@ const reset = () => {
     icon1.classList.remove("hidden");
     icon2.classList.add("hidden");
     document.body.style.overflow = "visible";
-    bottomLink.classList.remove("bottom-link_active");
   }
 };
 window.onresize = reset;
@@ -71,4 +70,18 @@ modalImg.forEach((img) => {
 //close light box
 closeBtn.addEventListener("click", () => {
   lightbox.style.display = "none";
+});
+
+//theme
+const icon = themeBtn.querySelector(".icons");
+
+themeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  icon.classList.toggle("fa-sun");
+
+  if (icon.classList.contains("fa-sun")) {
+    document.body.classList.add("active");
+  } else {
+    document.body.classList.remove("active");
+  }
 });

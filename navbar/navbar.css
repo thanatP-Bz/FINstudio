@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 }
 
 .logo {
@@ -151,25 +151,47 @@
   }
 }
 
-/* scroll link */
-.top-link,
-.bottom-link {
+/*theme btn  */
+.theme-btn {
   font-size: 1.5rem;
   position: fixed;
-  bottom: 1.5rem;
+  color: var(--color-white);
+  z-index: 1000;
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 1rem;
+  border-radius: 50%;
   right: 1rem;
   width: 3.2rem;
   height: 3.2rem;
   display: grid;
   place-items: center;
-  border-radius: 2px;
-  background-color: var(--main-color);
+  background-color: var(--box-second);
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+
+.theme-btn__hidden {
+  display: none;
+}
+
+/* scroll link, theme btn*/
+.top-link {
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--box-second);
   color: #fff;
   opacity: 0;
   transition: 0.5s ease-in;
 }
 
-.top-link_active,
-.bottom-link_active {
+.top-link_active {
   opacity: 1;
 }

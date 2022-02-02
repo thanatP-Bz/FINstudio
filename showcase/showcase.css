@@ -23,7 +23,7 @@
 }
 
 .letter {
-  color: #e1ad01;
+  color: var(--main-color);
 }
 
 .showcase .content-container h1 {

@@ -122,3 +122,27 @@ const observeProfile = new IntersectionObserver(revealProfile, {
 });
 
 observeProfile.observe(profile);
+
+//oberve news
+const newsBox = document.querySelectorAll(".news-box");
+const newH1 = document.querySelector(".news-h1");
+
+const revealNewsBox = (entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("news-box__active");
+      newH1.classList.add("news-h1__active");
+    }
+  });
+};
+
+const observeNews = new IntersectionObserver(revealNewsBox, {
+  threshold: 0,
+});
+
+newsBox.forEach((item) => {
+  observeNews.observe(item);
+});
