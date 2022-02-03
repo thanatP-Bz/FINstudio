@@ -14,7 +14,7 @@
 }
 
 .grid-box {
-  padding: 2.3rem;
+  padding: 1rem;
   margin: 1rem;
   color: var(--color-white);
   background-color: var(--main-color);
@@ -24,11 +24,12 @@
 
 .grid-box i {
   font-size: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--box-third);
 }
 
 .grid-box h2 {
-  margin: 0.5rem 0;
+  margin: 0.6rem 1rem;
 }
 
 .box-2 {

@@ -24,9 +24,6 @@
   transition: ease 1.7s;
   transform: translateY(100%);
   opacity: 0;
-  background-color: var(--color-white);
-  padding: 1rem;
-  box-shadow: var(--box-shadow);
 }
 
 .project-active {
@@ -41,6 +38,7 @@
   display: block;
   cursor: pointer;
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .project-grid__container img:hover {
@@ -54,6 +52,10 @@
 }
 
 @media (max-width: 800px) {
+  .project-header {
+    font-size: 1.3rem;
+  }
+
   .project-grid__container .light-box__img:nth-child(1) {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;

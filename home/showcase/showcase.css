@@ -23,7 +23,7 @@
 }
 
 .letter {
-  color: var(--main-color);
+  color: var(--box-third);
 }
 
 .showcase .content-container h1 {

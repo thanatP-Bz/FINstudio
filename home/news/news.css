@@ -44,12 +44,16 @@
   opacity: 0;
 }
 
+.news-box h3 {
+  padding: 0;
+}
+
 .news-box:nth-child(2) {
   transition: 1s ease;
 }
 
 .news-box:nth-child(3) {
-  transition: 1s ease;
+  transition: 1.5s ease;
 }
 
 .news-box__active {
@@ -71,4 +75,28 @@ p {
 
 .btn-news {
   text-align: center;
+}
+
+@media (max-width: 1030px) {
+  .news-h1 {
+    font-size: 1.3rem;
+  }
+
+  .news-box {
+    margin: 0.5rem 0;
+    height: 95%;
+    width: 95%;
+  }
+
+  .news-box img {
+    height: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .news-box {
+    margin: 1rem 0;
+    height: 95%;
+    width: 95%;
+  }
 }

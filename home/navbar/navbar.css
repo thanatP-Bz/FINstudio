@@ -166,7 +166,7 @@
   height: 3.2rem;
   display: grid;
   place-items: center;
-  background-color: var(--box-second);
+  background-color: var(--box-third);
   color: #fff;
   transition: 0.5s ease-in;
 }
@@ -179,14 +179,14 @@
 .top-link {
   font-size: 1.3rem;
   position: fixed;
-  bottom: 5rem;
+  bottom: 4.7rem;
   right: 1rem;
   width: 3.2rem;
   height: 3.2rem;
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: var(--box-second);
+  background-color: var(--box-third);
   color: #fff;
   opacity: 0;
   transition: 0.5s ease-in;
