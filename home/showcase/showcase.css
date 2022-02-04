@@ -6,8 +6,8 @@
   position: absolute;
   top: 120px;
   left: 2.3rem;
-  /*   transform: translateX(-120%);
-  overflow: hidden; */
+  transform: translateX(-120%);
+  overflow: hidden;
   transition: 1.3s;
 }
 

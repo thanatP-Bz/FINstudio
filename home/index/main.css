@@ -1,6 +1,6 @@
-@import "/header/mainHeader.css";
-@import "/showcase/showcase.css";
-@import "/navbar/navbar.css";
+@import "../header/mainHeader.css";
+@import "../showcase/showcase.css";
+@import "../navbar/navbar.css";
 
 /* content */
 @import "../content/content.css";
@@ -12,14 +12,14 @@
 @import "../concept/concept.css";
 
 /* profile */
-@import "/profile/profile.css";
+@import "../profile/profile.css";
 
-@import "/projects/projects.css";
-@import "/projects/lightbox.css";
+@import "../projects/projects.css";
+@import "../projects/lightbox.css";
 
-@import "/news/news.css";
+@import "../news/news.css";
 
-@import "/footer/footer.css";
+@import "../footer/footer.css";
 
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
