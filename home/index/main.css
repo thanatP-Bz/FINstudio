@@ -22,7 +22,7 @@
 @import "../footer/footer.css";
 
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Poppins:wght@200&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap");
 
 :root {
   --color-white: #fff;
@@ -48,10 +48,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   background-color: var(--body-theme);
   position: relative;
   overflow-x: hidden;
