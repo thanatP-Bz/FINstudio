@@ -1,3 +1,5 @@
+@import "../index/main.css";
+
 .content {
   padding: 5rem 4rem;
 }
@@ -25,7 +27,7 @@
   min-height: 80%;
   padding: 1rem;
   margin-left: 4.5rem;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   color: var(--color-white);
   border-radius: var(--border-radius);
 }
@@ -37,7 +39,7 @@
 
 .text-container p {
   line-height: 1.7;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 span {
   font-family: "Red Hat Display", sans-serif;
@@ -85,7 +87,7 @@ span {
 
   .text-container h1 {
     padding: 0.7rem 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .text-container p {
@@ -106,7 +108,7 @@ span {
 }
 
 /*resposive */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .about-us_container {
     display: flex;
     min-height: 800px;
@@ -129,7 +131,7 @@ span {
 
   .text-container p {
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .text-container .btn-container {
@@ -140,7 +142,7 @@ span {
 
   .content-image {
     min-width: 350px;
-    min-height: 400px;
+    min-height: 370px;
     justify-content: flex-end;
     margin: 0 auto;
     margin-top: 4.7rem;

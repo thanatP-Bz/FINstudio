@@ -1,26 +1,14 @@
-@import "../header/mainHeader.css";
-@import "../showcase/showcase.css";
-@import "../navbar/navbar.css";
-
-/* content */
-@import "../content/content.css";
-
-/* idea */
-@import "../idea/idea.css";
-
-/* concept */
-@import "../concept/concept.css";
-
-/* profile */
-@import "../profile/profile.css";
-
-@import "../projects/projects.css";
-@import "../projects/lightbox.css";
-
-@import "../news/news.css";
-
-@import "../footer/footer.css";
-
+@import "../components/concept.css";
+@import "../components/content.css";
+@import "../components/footer.css";
+@import "../components/idea.css";
+@import "../components/lightbox.css";
+@import "../components/mainHeader.css";
+@import "../components/navbar.css";
+@import "../components/news.css";
+@import "../components/profile.css";
+@import "../components/projects.css";
+@import "../components/showcase.css";
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Poppins:wght@200&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap");
 

@@ -1,6 +1,8 @@
+@import "../index/main.css";
+
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url(../home-1.jpg);
+    url(../img/home-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -129,7 +129,6 @@ const newH1 = document.querySelector(".news-h1");
 
 const revealNewsBox = (entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (!entry.isIntersecting) {
       return;
     } else {

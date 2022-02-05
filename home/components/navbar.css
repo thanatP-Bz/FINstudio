@@ -1,3 +1,5 @@
+@import "../index/main.css";
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,13 +11,17 @@
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1rem;
   white-space: nowrap;
-  color: var(--color-white);
+  color: #fff;
   flex-wrap: wrap;
-  /*  transform: translateX(-120%);
-  transition: 1.2s; */
+  transform: translateX(-120%);
+  transition: 1.2s;
+}
+
+.logo h1 {
+  color: var(--color-white);
 }
 
 .reveal-logo {
@@ -23,9 +29,9 @@
 }
 
 .nav-links {
-  /*  transform: translateX(120%);
+  transform: translateX(120%);
   transition: 1.2s;
-  overflow: hidden; */
+  overflow: hidden;
 }
 
 .reveal-nav {
