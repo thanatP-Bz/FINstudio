@@ -1,0 +1,51 @@
+@import "../aboutIndex/aboutMain.css";
+
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(../img/about-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#header .showcase {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#header .showcase h1 {
+  color: var(--color-white);
+  font-size: 4rem;
+}
+
+#header .showcase h1 .letter {
+  color: var(--main-theme);
+}
+
+@media screen and (max-width: 800px) {
+  #header {
+    position: relative;
+    height: 100vh;
+  }
+
+  #header .showcase {
+    text-align: center;
+    transition: 1s;
+  }
+
+  #header .showcase h1 {
+    font-size: 3rem;
+  }
+
+  #header .showcase-hidden {
+    transform: translate(-200%, -50%);
+  }
+}

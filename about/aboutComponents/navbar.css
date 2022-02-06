@@ -1,4 +1,4 @@
-@import "../index/main.css";
+@import "../aboutIndex/aboutMain.css";
 
 .navbar {
   display: flex;
@@ -9,7 +9,6 @@
   margin: 0 auto;
   padding: 1rem 4rem;
 }
-
 .logo {
   height: 100px;
   width: 100px;

@@ -12,10 +12,6 @@
   transition: 1.3s;
 }
 
-/* .reveal-showcase {
-  transform: translateX(0);
-} */
-
 .showcase .content-container {
   max-width: 550px;
   padding: 2rem;
