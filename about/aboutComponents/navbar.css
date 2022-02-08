@@ -56,7 +56,7 @@
 }
 
 .nav-links ul li a:hover {
-  color: var(--main-color);
+  color: var(--main-theme);
   transition: 0.4s;
 }
 
@@ -131,7 +131,7 @@
   }
 
   .side-bar_links ul li a:hover {
-    color: var(--main-color);
+    color: var(--main-theme);
     transition: 0.4s;
   }
 

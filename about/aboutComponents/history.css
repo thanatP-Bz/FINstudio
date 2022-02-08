@@ -2,6 +2,7 @@
 
 .history {
   padding: 4rem 4rem 5rem 4rem;
+  background-color: var(--color-white);
 }
 
 .history-container {
