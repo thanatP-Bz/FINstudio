@@ -57,7 +57,7 @@
 }
 
 .nav-links ul li a:hover {
-  color: var(--main-color);
+  color: var(--dark-theme);
   transition: 0.4s;
 }
 
@@ -173,7 +173,7 @@
   height: 3.2rem;
   display: grid;
   place-items: center;
-  background-color: var(--box-third);
+  background-color: var(--dark-theme);
   color: #fff;
   transition: 0.5s ease-in;
 }
@@ -193,7 +193,7 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: var(--box-third);
+  background-color: var(--dark-theme);
   color: #fff;
   opacity: 0;
   transition: 0.5s ease-in;

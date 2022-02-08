@@ -24,8 +24,8 @@
   --main-color: white;
   --second-color: #333652;
 
-  --dark-theme: #e1ad01;
-  --body-theme: #f0ffff;
+  --dark-theme: #fad55c;
+  --body-theme: #dcf0f0;
 
   --box-shadow:/*  0 0 10px rgba(0, 0, 0, 0.3) */ ;
   --border-radius: 3px;
@@ -65,7 +65,7 @@ li {
 
 .btn {
   color: var(--main-color);
-  background-color: var(--box-third);
+  background-color: var(--dark-theme);
   padding: 1rem 3rem;
   border-radius: 100px;
   font-size: 1rem;
@@ -85,7 +85,7 @@ li {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: var(--box-third);
+  background-color: var(--dark-theme);
   color: #fff;
 }
 

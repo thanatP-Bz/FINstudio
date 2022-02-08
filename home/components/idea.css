@@ -25,7 +25,7 @@
 .grid-box i {
   font-size: 2rem;
   padding: 0.5rem 1rem;
-  color: var(--box-third);
+  color: var(--dark-theme);
 }
 
 .grid-box h2 {
