@@ -1,12 +1,12 @@
 @import "../aboutIndex/aboutMain.css";
 
 .history {
-  padding: 4rem 4rem 5rem 4rem;
+  padding: 4rem;
   background-color: var(--color-white);
 }
 
 .history-container {
-  max-height: 500px;
+  height: 500px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -18,8 +18,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 500px;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   color: var(--color-black);
 }
 
@@ -35,11 +35,35 @@
 }
 .history-img__container {
   max-height: 500px;
-  min-width: 100%;
+  width: 100%;
 }
 
 .history-img__container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .history {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .history-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 850px;
+  }
+  .history-text__control h1 {
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .history-text__control .fin-p {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 }

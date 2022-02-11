@@ -2,7 +2,6 @@
 @import "../components/content.css";
 @import "../components/footer.css";
 @import "../components/idea.css";
-@import "../components/lightbox.css";
 @import "../components/mainHeader.css";
 @import "../components/navbar.css";
 @import "../components/news.css";
@@ -90,11 +89,19 @@ li {
 }
 
 /* resposive */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .btn {
     padding: 0.5rem 3rem;
     border-radius: 100px;
     font-size: 1rem;
+  }
+
+  .concept,
+  .content,
+  .projects,
+  .profile,
+  .news {
+    padding: 2rem 1.5rem;
   }
 }
 

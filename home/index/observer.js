@@ -62,7 +62,6 @@ textObserve.observe(about);
 const concept = document.querySelector(".concept");
 const conceptContainer = document.querySelector(".text-concept_container");
 const conceptImg1 = document.querySelector(".concept-image_image-1");
-const conceptImg2 = document.querySelector(".concept-image_image-2");
 
 const revealConcept = (entries, observer) => {
   const [entry] = entries;
@@ -70,7 +69,6 @@ const revealConcept = (entries, observer) => {
   else {
     conceptContainer.classList.add("text-concept_container-active");
     conceptImg1.classList.add("concept-image_1-active");
-    conceptImg2.classList.add("concept-image-2-active");
   }
   observer.unobserve(entry.target);
 };

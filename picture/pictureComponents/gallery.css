@@ -35,6 +35,11 @@
   cursor: pointer;
 }
 
+.gallery-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .gallery-container .light-box__img:hover,
 .light-box__img-2:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
