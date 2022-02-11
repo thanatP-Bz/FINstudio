@@ -25,7 +25,7 @@
 .light-box__content .close {
   position: absolute;
   top: 0;
-  right: -40px;
+  right: 0;
   color: var(--color-white);
   cursor: pointer;
   font-size: 2rem;

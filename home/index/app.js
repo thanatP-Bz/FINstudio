@@ -59,7 +59,7 @@ const closeBtn = document.querySelector(".close");
 const showImg = lightbox.querySelector(".show-image img");
 const modalImg = document.querySelectorAll(".modal-img");
 
-//add lightbox
+/* //add lightbox
 modalImg.forEach((img) => {
   img.addEventListener("click", () => {
     lightbox.style.display = "block";
@@ -70,7 +70,7 @@ modalImg.forEach((img) => {
 //close light box
 closeBtn.addEventListener("click", () => {
   lightbox.style.display = "none";
-});
+}); */
 
 //theme
 const icon = themeBtn.querySelector(".icons");

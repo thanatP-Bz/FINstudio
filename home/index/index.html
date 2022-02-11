@@ -10,7 +10,7 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="lightbox.css" />
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
@@ -180,25 +180,34 @@
       </div>
       <div class="project-grid__container">
         <div class="light-box__img">
-          <img src="../img/fin-1.jpg" alt="" class="modal-img" />
+          <a href="../img/fin-1.jpg" data-lightbox="models" data-title="pic-1">
+            <img src="../img/fin-1.jpg" alt="" />
+          </a>
         </div>
         <div class="light-box__img">
-          <img src="../img/fin-2.jpg" alt="" class="modal-img" />
+          <a href="../img/fin-2.jpg" data-lightbox="models" data-title="pic-1">
+            <img src="../img/fin-2.jpg" alt="" />
+          </a>
         </div>
         <div class="light-box__img">
-          <img src="../img/pic-3.jpg" alt="" class="modal-img" />
-        </div>
-
-        <div class="light-box__img">
-          <img src="../img/fin-4.jpg" alt="" class="modal-img" />
+          <a href="../img/fin-3.jpg" data-lightbox="models" data-title="pic-1">
+            <img src="../img/fin-3.jpg" alt="" />
+          </a>
         </div>
         <div class="light-box__img">
-          <img src="../img/fin-5.jpg" alt="" class="modal-img" />
+          <a href="../img/fin-4.jpg" data-lightbox="models" data-title="pic-1">
+            <img src="../img/fin-4.jpg" alt="" />
+          </a>
+        </div>
+        <div class="light-box__img">
+          <a href="../img/fin-5.jpg" data-lightbox="models" data-title="pic-1">
+            <img src="../img/fin-5.jpg" alt="" />
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="light-box" class="light-box">
+   <!--  <section id="light-box" class="light-box">
       <div class="light-box__container">
         <div class="light-box__content">
           <i class="fas fa-times close"></i>
@@ -206,7 +215,7 @@
             <img src="../img/latest-2.jpg" alt="" />
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- projects end -->
@@ -305,4 +314,5 @@
   </body>
   <script src="app.js"></script>
   <script src="observer.js"></script>
+  <script src="./lightbox-plus-jquery.min.js"></script>
 </html>

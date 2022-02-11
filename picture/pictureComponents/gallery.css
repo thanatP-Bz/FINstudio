@@ -39,3 +39,19 @@
 .light-box__img-2:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
+
+@media (max-width: 1024px) {
+  .gallery-container {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .gallery-container {
+    column-count: 1;
+  }
+}
