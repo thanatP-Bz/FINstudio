@@ -158,35 +158,11 @@
   }
 }
 
-/*theme btn  */
-.theme-btn {
-  font-size: 1.5rem;
-  position: fixed;
-  color: var(--color-white);
-  z-index: 1000;
-  font-size: 1.3rem;
-  position: fixed;
-  bottom: 1rem;
-  border-radius: 50%;
-  right: 1rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  display: grid;
-  place-items: center;
-  background-color: var(--dark-theme);
-  color: #fff;
-  transition: 0.5s ease-in;
-}
-
-.theme-btn__hidden {
-  display: none;
-}
-
 /* scroll link, theme btn*/
 .top-link {
   font-size: 1.3rem;
   position: fixed;
-  bottom: 4.7rem;
+  bottom: 1rem;
   right: 1rem;
   width: 3.2rem;
   height: 3.2rem;
