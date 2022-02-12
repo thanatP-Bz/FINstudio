@@ -6,7 +6,7 @@
 }
 
 .history-container {
-  height: 500px;
+  max-height: 500px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

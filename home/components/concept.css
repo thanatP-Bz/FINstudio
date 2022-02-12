@@ -1,15 +1,14 @@
 @import "../index/main.css";
 
 .concept {
-  padding: 5rem 4rem 4rem 4rem;
+  padding: 4rem;
   background-color: var(--color-white);
 }
 
 .concept-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  height: 500px;
+  display: flex;
   width: 100%;
+  height: 450px;
 }
 
 .text-concept_container {
@@ -24,7 +23,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: var(--border-radius);
+
   box-shadow: var(--box-shadow);
 }
 
@@ -43,19 +42,12 @@
   margin-bottom: 3rem;
 }
 
-.concept-image {
-  width: 100%;
-  max-height: 500px;
-}
-
 .concept-image_image-1 {
   width: 100%;
   height: 100%;
-  box-shadow: var(--box-shadow);
-  object-fit: cover;
-  /* transition: 2.4s ease;
+  transition: 2.4s ease;
   transform: translateX(-130%);
-  opacity: 0; */
+  opacity: 0;
 }
 
 .concept-image_1-active {
@@ -63,23 +55,10 @@
   opacity: 1;
 }
 
-.concept-image-2-active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .concept-image_image-1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: var(--border-radius);
-}
-
-.concept-image_image-2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--border-radius);
 }
 
 .text-concept_container .btn-container a {
@@ -91,6 +70,7 @@
     display: flex;
     flex-direction: column;
     height: 700px;
+    text-align: center;
   }
 
   .text-concept_container h1 {
@@ -100,13 +80,22 @@
 }
 
 @media (max-width: 475px) {
+  .concept-container {
+    height: 500px;
+    width: 100%;
+  }
   .text-concept_container {
     margin-top: 2rem;
-    height: 600px;
+    padding: 0;
   }
 
   .text-concept_container h1 {
     padding: 0;
     font-size: 1.3rem;
+  }
+
+  .text-concept_container p {
+    line-height: 1.1;
+    margin-bottom: 3rem;
   }
 }
