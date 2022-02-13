@@ -26,6 +26,10 @@
   --font-color: #202020;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,8 +82,12 @@ li {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: var(--box-third);
+  background-color: var(--main-theme);
   color: #fff;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 /* resposive */

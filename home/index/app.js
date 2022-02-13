@@ -18,14 +18,12 @@ toggleButton.addEventListener("click", () => {
   //toggle sidebar
   sidebar.classList.toggle("show-side_bar");
   showcase.classList.toggle("showcase-hidden");
-  themeBtn.classList.add("theme-btn__hidden");
 
   //hidden scroll bar and show bottom link
   if (sidebar.classList.contains("show-side_bar")) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "visible";
-    themeBtn.classList.remove("theme-btn__hidden");
   }
 
   //add and remove icons
@@ -51,17 +49,3 @@ const reset = () => {
   }
 };
 window.onresize = reset;
-
-//theme
-const icon = themeBtn.querySelector(".icons");
-
-themeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  icon.classList.toggle("fa-sun");
-
-  if (icon.classList.contains("fa-sun")) {
-    document.body.classList.add("active");
-  } else {
-    document.body.classList.remove("active");
-  }
-});

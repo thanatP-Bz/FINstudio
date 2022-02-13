@@ -69,7 +69,7 @@
   }
 
   .proflie-image_container {
-    height: 60%;
+    height: 52%;
   }
 
   .proflie-image_container img {
@@ -102,5 +102,16 @@
   .profile-text_container p {
     margin-bottom: 2rem;
     line-height: 1.3;
+  }
+}
+
+@media (max-width: 475px) {
+  .profile {
+    padding-top: 0;
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
   }
 }

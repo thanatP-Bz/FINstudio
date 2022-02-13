@@ -5,7 +5,6 @@ const logo = document.querySelector(".logo");
 const navlinks = document.querySelector(".nav-links");
 const icon1 = document.querySelector(".icon-1");
 const icon2 = document.querySelector(".icon-2");
-const themeBtn = document.querySelector(".theme-btn");
 
 //header effect
 window.addEventListener("DOMContentLoaded", () => {
@@ -17,14 +16,12 @@ toggleButton.addEventListener("click", () => {
   //toggle sidebar
   sidebar.classList.toggle("show-side_bar");
   showcase.classList.toggle("showcase-hidden");
-  themeBtn.classList.add("theme-btn__hidden");
 
   //hidden scroll bar and show bottom link
   if (sidebar.classList.contains("show-side_bar")) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "visible";
-    themeBtn.classList.remove("theme-btn__hidden");
   }
 
   //add and remove icons

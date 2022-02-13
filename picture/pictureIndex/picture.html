@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Picture</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Poppins:wght@200&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="lightbox.css" />
   </head>
   <body>
-    <a href="#" class="theme-btn"><i class="fas fa-moon icons"></i></a>
-
     <header id="header">
       <nav class="navbar">
         <div class="logo">
@@ -51,21 +49,25 @@
             <li>
               <a href="../../picture/pictureIndex/picture.html">Pictures</a>
             </li>
-            <li><a href="../../about/aboutIndex/about.html">About Us</a></li>
+            <li><a href="../../about/aboutIndex/about.html">About</a></li>
           </ul>
         </div>
       </nav>
       <!-- sidebar end -->
 
       <div class="showcase">
-        <h1><span class="letter">FIN</span> Gallery</h1>
+        <div class="reveal">
+          <h1 class="reveal-content">
+            <span class="letter">FIN</span> Gallery
+          </h1>
+        </div>
       </div>
     </header>
 
     <!-- gallery -->
     <section id="gallery" class="gallery">
       <div class="gallery-container">
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-1.jpg" data-lightbox="models">
             <img src="../img/in-1.jpg" alt="" class="modal-img-2-2" />
           </a>
@@ -75,7 +77,7 @@
             <img src="../img/fin-1.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-2.jpg" data-lightbox="models">
             <img src="../img/in-2.jpg" alt="" class="modal-img-2" />
           </a>
@@ -95,7 +97,7 @@
             <img src="../img/fin-3.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-4.jpg" data-lightbox="models">
             <img src="../img/in-4.jpg" alt="" class="modal-img-2" />
           </a>
@@ -110,7 +112,7 @@
             <img src="../img/fin-5.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/fin-2.jpg" data-lightbox="models">
             <img src="../img/fin-2.jpg" alt="" class="modal-img-2" />
           </a>
@@ -120,12 +122,12 @@
             <img src="../img/fin-6.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-3.jpg" data-lightbox="models">
             <img src="../img/in-3.jpg" alt="" class="modal-img-2" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-6.jpg" data-lightbox="models">
             <img src="../img/in-6.jpg" alt="" class="modal-img-2" />
           </a>
@@ -135,7 +137,7 @@
             <img src="../img/fin-7.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-7.jpg" data-lightbox="models">
             <img src="../img/in-7.jpg" alt="" class="modal-img-2" />
           </a>
@@ -145,17 +147,17 @@
             <img src="../img/fin-8.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-9.jpg" data-lightbox="models">
             <img src="../img/in-9.jpg" alt="" class="modal-img-2" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/fin-9.jpg" data-lightbox="models">
             <img src="../img/fin-9.jpg" alt="" class="modal-img-2" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/in-10.jpg" data-lightbox="models">
             <img src="../img/in-10.jpg" alt="" class="modal-img-2" />
           </a>
@@ -165,7 +167,7 @@
             <img src="../img/fin-11.jpg" alt="" class="modal-img" />
           </a>
         </div>
-        <div class="light-box__img-2">
+        <div class="light-box__img">
           <a href="../img/fin-10.jpg" data-lightbox="models">
             <img src="../img/fin-10.jpg" alt="" class="modal-img-2" />
           </a>
@@ -229,6 +231,7 @@
       <i class="fas fa-arrow-up"></i>
     </a>
     <script src="picture.js"></script>
+    <script src="picObserve.js"></script>
     <script src="./lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

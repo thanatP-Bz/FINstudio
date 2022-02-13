@@ -39,6 +39,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body-theme);
   position: relative;
@@ -88,6 +92,12 @@ li {
   color: #fff;
 }
 
+h1,
+h2,
+p {
+  color: #333;
+}
+
 /* resposive */
 @media (max-width: 950px) {
   .btn {
@@ -105,8 +115,12 @@ li {
   }
 }
 
-h1,
-h2,
-p {
-  color: #333;
+@media (max-width: 475px) {
+  .concept,
+  .content,
+  .projects,
+  .profile,
+  .news {
+    padding: 1rem 0.5rem;
+  }
 }

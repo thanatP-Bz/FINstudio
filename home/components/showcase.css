@@ -66,17 +66,17 @@
 @media screen and (max-width: 800px) {
   .showcase {
     position: absolute;
-    top: 150px;
-    left: 0;
-    transform: translateX(0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: 1s;
   }
 
   .showcase-hidden {
-    transform: translateX(-120%);
+    transform: translate(-200%, -50%);
   }
 
   .showcase .content-container h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }

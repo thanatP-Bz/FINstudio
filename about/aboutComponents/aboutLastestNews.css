@@ -1,3 +1,5 @@
+@import "../aboutIndex/aboutMain.css";
+
 .about-lastest {
   padding: 0px 4rem 4rem 4rem;
 }
@@ -5,6 +7,9 @@
 .about-lastest__h1 {
   padding: 5rem;
   text-align: center;
+  transition: 1.5s ease;
+  opacity: 0;
+  transform: translateY(50%);
 }
 
 .about-lastest__h1 h1 {
@@ -29,6 +34,14 @@
   width: 100%;
   color: var(--color-black);
   background-color: var(--color-white);
+  transition: 1.2s ease;
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.show-lastest {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .about-lastest-text__control h1 {
@@ -45,6 +58,14 @@
 .about-lastest-img__container {
   max-height: 500px;
   width: 100%;
+  transition: 1.5s ease;
+  transform: translateY(70%);
+  opacity: 0;
+}
+
+.show-lastest__img {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .about-lastest-img__container img {
@@ -78,5 +99,24 @@
 
   .about-lastest-text__control h1 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .about-lastest__h1 {
+    padding: 1.4rem;
+  }
+
+  .about-lastest__h1 h1 {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+
+  .about-lastest-text__control h1 {
+    font-size: 1.4rem;
+  }
+
+  .about-lastest-text__control .fin-p {
+    font-size: 0.75rem;
   }
 }

@@ -143,3 +143,20 @@ const observeNews = new IntersectionObserver(revealNewsBox, {
 newsBox.forEach((item) => {
   observeNews.observe(item);
 });
+
+//obseve btn
+const newsBtn = document.querySelector(".btn-news");
+
+const revealBtn = (entries) => {
+  [entry] = entries;
+  if (!entry.isIntersecting) return;
+  else {
+    newsBtn.classList.add("show-btn");
+  }
+};
+
+const observeBtn = new IntersectionObserver(revealBtn, {
+  threshold: 0.1,
+});
+
+observeBtn.observe(newsBtn);

@@ -31,6 +31,24 @@
   color: var(--main-theme);
 }
 
+#header .showcase .reveal {
+  overflow: hidden;
+}
+
+#header .showcase .reveal-content {
+  transform: translateY(100%);
+  animation: reveal 1.7s cubic-bezier(1, 0, 0.3, 0.9) forwards;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 800px) {
   #header {
     position: relative;

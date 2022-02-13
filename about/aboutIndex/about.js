@@ -17,14 +17,12 @@ toggleButton.addEventListener("click", () => {
   //toggle sidebar
   sidebar.classList.toggle("show-side_bar");
   showcase.classList.toggle("showcase-hidden");
-  themeBtn.classList.add("theme-btn__hidden");
 
   //hidden scroll bar and show bottom link
   if (sidebar.classList.contains("show-side_bar")) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "visible";
-    themeBtn.classList.remove("theme-btn__hidden");
   }
 
   //add and remove icons
