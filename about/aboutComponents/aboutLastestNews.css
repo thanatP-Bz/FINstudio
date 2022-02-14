@@ -79,8 +79,12 @@
     padding: 0px 1.5rem 1.7rem 1.5rem;
   }
 
+  .about-lastest__h1 {
+    padding: 2.5rem;
+  }
+
   .about-lastest__h1 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .about-lastest-container {
