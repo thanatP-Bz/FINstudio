@@ -24,7 +24,7 @@
   overflow: hidden;
   transform: translateY(70%);
   opacity: 0;
-  transition: ease 1.5s;
+  transition: ease 1.3s;
 }
 
 .show-lightbox {
@@ -46,7 +46,7 @@
   justify-content: center;
   transform: translateY(100%);
   opacity: 0;
-  transition: 1.5s ease;
+  transition: 1.2s ease;
 }
 
 .show-btn {

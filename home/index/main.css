@@ -25,8 +25,9 @@
 
   --dark-theme: #fad55c;
   --body-theme: #dcf0f0;
+  --footer-color: #464444;
 
-  --box-shadow:/*  0 0 10px rgba(0, 0, 0, 0.3) */ ;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   --border-radius: 3px;
 
   --font-color: #202020;
@@ -79,6 +80,7 @@ li {
 .btn:hover {
   background-color: var(--second-color);
   color: var(--color-white);
+  transition: 0.3s;
 }
 
 .btn-icon {
@@ -90,6 +92,11 @@ li {
   border-radius: 50%;
   background-color: var(--dark-theme);
   color: #fff;
+}
+
+.btn-icon:hover {
+  background-color: var(--second-color);
+  transition: 0.4s;
 }
 
 h1,

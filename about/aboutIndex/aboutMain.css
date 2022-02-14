@@ -24,6 +24,7 @@
   --border-radius: 3px;
 
   --font-color: #202020;
+  --footer-color: #464444;
 }
 
 html {
@@ -84,6 +85,11 @@ li {
   border-radius: 50%;
   background-color: var(--main-theme);
   color: #fff;
+}
+
+.btn-icon:hover {
+  background-color: var(--second-color);
+  transition: 0.4s;
 }
 
 .hidden {

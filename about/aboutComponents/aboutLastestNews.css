@@ -34,7 +34,7 @@
   width: 100%;
   color: var(--color-black);
   background-color: var(--color-white);
-  transition: 1.2s ease;
+  transition: 1.1s ease;
   transform: translateY(50%);
   opacity: 0;
 }
@@ -58,7 +58,7 @@
 .about-lastest-img__container {
   max-height: 500px;
   width: 100%;
-  transition: 1.5s ease;
+  transition: 1.2s ease;
   transform: translateY(70%);
   opacity: 0;
 }

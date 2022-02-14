@@ -46,9 +46,9 @@ span {
   height: 90%;
   margin-top: -1.5rem;
   margin-right: 2rem;
-  transform: translateX(130%);
+  transform: translateX(100%);
   opacity: 0;
-  transition: 2.4s ease;
+  transition: 1.7s ease;
 }
 
 .content-image_active {

@@ -132,7 +132,7 @@
   }
 
   .side-bar_links ul li a:hover {
-    color: var(--main-color);
+    color: var(--dark-theme);
     transition: 0.4s;
   }
 
@@ -173,6 +173,11 @@
   color: #fff;
   opacity: 0;
   transition: 0.5s ease-in;
+}
+
+.top-link:hover {
+  background-color: var(--second-color);
+  transition: 0.3s;
 }
 
 .top-link_active {

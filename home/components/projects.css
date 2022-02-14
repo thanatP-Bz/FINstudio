@@ -38,8 +38,6 @@
   object-fit: cover;
   display: block;
   cursor: pointer;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
 
 .project-grid__container img:hover {
